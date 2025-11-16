@@ -8,10 +8,10 @@ class TestUIDesignChecks(unittest.TestCase):
         """
         Verifies that text validation for UI elements works correctly.
         """
-        # Scenario A: Text is very short.
+        # Scenario 1: Text is very short.
         self.assertTrue(design_tools.is_text_fit("Short text."), "Length of 15 should be True.")
 
-        # Scenario B: Text is too long.
+        # Scenario 2: Text is too long.
         self.assertFalse(design_tools.is_text_fit("This is the long text."), "Length over 15 should be False.")
 
 

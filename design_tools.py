@@ -5,7 +5,7 @@ def is_text_fit(text):
     Returns True if length is 15 characters or less.
     """
     MAX_LENGTH = 15
-    return len(text) <= MAX_LENGTH
+    return len(text) <= MAX_LENGTH 
 
 # 2. UI Check: Responsive Sizing
 def calculate_padding(screen_size, base_unit=8):

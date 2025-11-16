@@ -20,13 +20,13 @@ class TestUIDesignChecks(unittest.TestCase):
         """
         Verifies that padding calculations are correct for different screen sizes. (Base unit is 8px)
         """
-        # Scenario A: Mobile Screen (< 600px)
+        # Scenario 1: Mobile Screen (< 600px)
         self.assertEqual(design_tools.calculate_padding(screen_size=599), 16, "Mobile padding should be 16px.")
         
-        # Scenario B: Tablet Screen (600px <= size < 1200px)
+        # Scenario 2: Tablet Screen (600px <= size < 1200px)
         self.assertEqual(design_tools.calculate_padding(screen_size=768), 24, "Tablet padding should be 24px.")
         
-        # Scenario C: Desktop Screen (>= 1200px)
+        # Scenario 3: Desktop Screen (>= 1200px)
         self.assertEqual(design_tools.calculate_padding(screen_size=1920), 32, "Desktop padding should be 32px.")
 
 
